@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project</title>
+    <link rel="stylesheet" href="css_files/main.css">
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <h2>Menu</h2>
+            <div class="menu-content">
+                <li class="list-item" onclick="tabs('register', 'white', this)">Register</li>
+                <li class="list-item" onclick="tabs('verify', 'white', this)">Verify</li>
+                <li>Logout</li>
+            </div>
+        </div>
+        <div class="pages">
+            <div class="container-one content-page" id="register">
+                <div class="register-content">
+                    <h1>Register Student</h1>
+                    <ol><label>First Name: <input type="text"></label></ol>
+                    <ol><label>Last Name: <input type="text"></label></ol>
+                    <ol><label>Matric Num: <input type="number"></label></ol>
+                    <ol></ol>
+                    <ol><label>Gender:  <select>
+                        <option value="a">Other</option>
+                        <option value="b">Male</option>
+                        <option value="c">Female</option>
+                    </select></label></ol>
+                    <ol><label>School :</label>
+                    <input id="bynary" type="text" list="School"/>
+                    <datalist id="School">
+                      <option value="Science And Tech">
+                      <option value="Liberal Studies">
+                      <option value="Environmental Studies">
+                      <option value="Mangement">
+                      <option value="Geo-Iformation">
+                    </datalist>
+                </ol>
+                    <ol><label>Department: </label>
+                    <input id="ayo" type="text" list="Department"/>
+                    <datalist id="Department">
+                        <option value="Com Sci">
+                        <option value="Bus Admin">  
+                        <option value="Mass Com">
+                        <option value="SLT">
+                        <option value="Com Eng">
+                      
+                    </datalist>
+                </ol>
+                    <ol><label>Course Title: <input type="text"></label></ol>
+                    <ol><label>Course code : <input type="text"></label></ol>
+                    <ol><label>Level:</label><input type="text" list="level" id="Level" required/>
+                    <datalist id="level">
+                            <option value="ND1 Full Time">
+                            <option value="ND1 Part Time">
+                            <option value="ND2 Full Time">
+                            <option value="ND2 Part Time">
+                            <option value="HND1 Full Time">
+                            <option value="HND1 Part Time">
+                            <option value="HND2 Full Time">
+                            <option value="HND2 Part Time">
+                        </datalist>
+                    </ol>
+                        <ol><label>Semester</label>
+                        <input type="text" name="Semester" list="semester" id="Semester">
+                           <datalist id="semester">
+                              <option value="First Semester">
+                              <option value="Second Semester">
+                           </datalist>
+                           </ol>
+                        <ol><input type="file"/> </ol>
+                    <ol><input type="submit" name="" value="Register "></ol>
+
+                </div>
+            </div>
+            <div class="container-two content-page" id="verify">
+                <div class="verify-student">
+                        <h1>Verify student</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="javascript/main.js"></script>
+</html>
